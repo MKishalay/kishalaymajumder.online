@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    /* Single-screen layout — no page scroll, so the background video
+       never has to be repainted mid-scroll (fixes mobile scroll jank). */
+    overflow: hidden;
+}
+
 body {
     background: #000;
     color: #fff;
@@ -12,13 +19,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 2rem;
+    position: relative;
 }
 
 /* Background video */
 .bg-video {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -32,7 +40,7 @@ body {
 
 /* Darkening scrim so text stays readable over the video */
 .bg-overlay {
-    position: fixed;
+    position: absolute;
     inset: 0;
     background: linear-gradient(
         to bottom,
