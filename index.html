@@ -8,78 +8,12 @@
 
     <title>M. Kishalay</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.ico">
+    <link rel="alternate icon" href="assets/favicon.ico">
 
-        body {
-            background: #000;
-            color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                         Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 700px;
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: -1px;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            font-weight: 400;
-            color: #9ca3af;
-            margin-bottom: 2rem;
-        }
-
-        p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #d1d5db;
-            margin-bottom: 2rem;
-        }
-
-        .links {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .links a {
-            color: #fff;
-            text-decoration: none;
-            transition: opacity 0.2s ease;
-        }
-
-        .links a:hover {
-            opacity: 0.6;
-        }
-
-        footer {
-            margin-top: 4rem;
-            color: #6b7280;
-            font-size: 0.9rem;
-        }
-
-        ::selection {
-            background: #fff;
-            color: #000;
-        }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -93,15 +27,17 @@
         </p>
 
         <div class="links">
-            <a href="https://github.com/MKishalay" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/kishalay-majumder-91a511395/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MKishalay" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/kishalay-majumder-91a511395/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:kishalay.maj@gmail.com">Email</a>
         </div>
 
         <footer>
-            © 2026 Kishalay Majumder
+            © <span id="year">2026</span> Kishalay Majumder
         </footer>
     </main>
 
+    <!-- Script -->
+    <script src="js/script.js"></script>
 </body>
 </html>
